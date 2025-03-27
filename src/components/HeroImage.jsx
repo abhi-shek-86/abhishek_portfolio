@@ -8,10 +8,9 @@ const HeroImage = () => {
       initial={{ opacity: 0, x: "100vw" }} // Start completely outside the webpage (right side)
       animate={{ opacity: 1, x: 0 }} // Animate to its final position
       transition={{
-        duration: 1.5, // Animation duration
-        type: "spring", // Smooth spring animation
-        stiffness: 50, // Spring stiffness
-        damping: 20, // Smooth damping effect
+        duration: 1.2, // Slightly shorter duration for smoothness
+        type: "tween", // Use tween for a smoother animation
+        ease: "easeOut", // Smooth easing function
       }}
       className="relative w-[200px] h-[200px] md:w-[300px] md:h-[300px] rounded-full shadow-2xl border-4 border-[#915EFF] mt-10 md:mt-0"
     >
