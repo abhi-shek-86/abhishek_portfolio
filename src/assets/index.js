@@ -36,7 +36,8 @@ import fullStack from './tech/fullStack.png';
 import uiux from './tech/uiux.png';
 import frontEnd from './tech/frontEnd.png';
 import Backend from './tech/Backend.png';
-import link from "./tech/link.png"; // Add this import
+import link from "./tech/link.png";
+import Black from "./tech/Black.png"; // Make sure path matches your file structure
 
 export {
   logo,
@@ -78,4 +79,5 @@ export {
   redux,
   tailwind,
   threejs,
+  Black, // Make sure this is exported
 };

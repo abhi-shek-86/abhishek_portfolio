@@ -38,6 +38,7 @@ import {
   firstTestimonial,
   secondTestimonial,
   thirdTestimonial,
+  Black,
 } from '../assets'
 
 

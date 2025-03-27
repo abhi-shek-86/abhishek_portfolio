@@ -1,6 +1,7 @@
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { motion } from "framer-motion";
 
 import CanvasLoader from "../Loader";
 
@@ -47,25 +48,24 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    !isMobile && ( // Hide on mobile screens
-      <Canvas
-        frameloop="demand"
-        shadows
-        dpr={[1, 2]}
-        camera={{ position: [20, 3, 5], fov: 25 }}
-        gl={{ preserveDrawingBuffer: true }}
+    <div className="absolute right-0 top-0 h-screen w-1/2 flex items-center justify-center">
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1.5 }}
+        className="relative w-[80%] h-[80%]"
       >
-        <Suspense fallback={<CanvasLoader />}>
-          <OrbitControls
-            enableZoom={false}
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 2}
-          />
-          <Computers />
-        </Suspense>
-        <Preload all />
-      </Canvas>
-    )
+        <img
+          src="/your-profile-image.jpg" // Add your image to public folder
+          alt="Your Profile"
+          className="w-full h-full object-cover rounded-xl shadow-2xl"
+          style={{
+            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/50 to-transparent" />
+      </motion.div>
+    </div>
   );
 };
 
