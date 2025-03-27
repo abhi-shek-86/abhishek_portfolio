@@ -32,7 +32,11 @@ import thirdTestimonial from './third testimonial.webp';
 import uber from './tech/uber.png';
 import lt from './tech/lt.png';
 import bmi from './tech/bmi.png';
-
+import fullStack from './tech/fullStack.png';
+import uiux from './tech/uiux.png';
+import frontEnd from './tech/frontEnd.png';
+import Backend from './tech/Backend.png';
+import link from "./tech/link.png"; // Add this import
 
 export {
   logo,
@@ -49,6 +53,14 @@ export {
   project3,
   mysql,
   express,
+  uber,
+  fullStack,
+  lt,
+  bmi,
+  uiux,
+  frontEnd,
+  Backend,
+  link,  // Make sure this is exported
   aws,
   mui,
   firstTestimonial,
@@ -66,7 +78,4 @@ export {
   redux,
   tailwind,
   threejs,
-  uber,
-  lt,
-  bmi,
 };

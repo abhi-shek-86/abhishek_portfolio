@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, link } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 
@@ -18,6 +18,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_demo_link,
 }) => {
   const cardRef = useRef(null);
 
@@ -62,7 +63,7 @@ const ProjectCard = ({
             className="w-full h-full object-cover object-left rounded-2xl"
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
             <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -73,6 +74,14 @@ const ProjectCard = ({
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
+            {live_demo_link && (
+              <div
+                onClick={() => window.open(live_demo_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img src={link} alt="live demo" className="w-1/2 h-1/2 object-contain" />
+              </div>
+            )}
           </div>
         </div>
 

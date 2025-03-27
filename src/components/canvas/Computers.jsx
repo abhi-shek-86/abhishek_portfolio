@@ -21,9 +21,9 @@ const Computers = () => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={0.75} // Keep scale normal for desktop
-        position={[0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={0.65}  // Adjust scale (smaller number = smaller model)
+        position={[0, -3.25, -1.5]} // Adjust position [x, y, z]
+        rotation={[-0.01, -0.2, -0.1]} // Adjust rotation if needed
       />
     </mesh>
   );

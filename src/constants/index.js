@@ -14,11 +14,15 @@ import {
   mysql,
   express,
   uber,
+  fullStack,
   lt,
   bmi,
+  uiux,
+  frontEnd,
+  Backend,
+  link,
   aws,
   mui,
-
   gsap,
   framer,
   figma,
@@ -62,19 +66,19 @@ export const navLinks = [
 const services = [
   {
     title: "Full-Stack Developer",
-    icon: web,
+    icon: fullStack,
   },
   {
     title: "Frontend Developer",
-    icon: mobile,
+    icon: frontEnd,
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: Backend,
   },
   {
     title: "Ui UX Designer",
-    icon: creator,
+    icon: uiux,
   },
 ];
 
@@ -158,7 +162,7 @@ const experiences = [
   {
     title: "Web-Developer",
     company_name: "Cognifyz",
-    icon: web, // Using the web icon from your assets instead of company logo
+    icon: frontEnd, // Using the web icon from your assets instead of company logo
     iconBg: "#E6DEDD",
     date: "Aug 2023 - Sep 2023",
     points: [
@@ -172,7 +176,7 @@ const experiences = [
   {
     title: "Full-Stack Developer",
     company_name: "Bharat Intern",
-    icon: web, // Using the web icon from your assets instead of company logo
+    icon: fullStack, // Using the web icon from your assets instead of company logo
     iconBg: "#E6DEDD", // Light elegant background
     date: "Nov 2023 - Dec 2023",
     points: [
@@ -237,6 +241,7 @@ const projects = [
     ],
     image: uber,
     source_code_link: "https://github.com/abhi-shek-86/uber_clone.git",
+    live_demo_link: "https://uber-clone-fawn-chi.vercel.app/" // Add this line
   },
   {
     name: "Language Translator - Final Year proj",
@@ -258,6 +263,7 @@ const projects = [
     ],
     image: lt,
     source_code_link: "https://github.com/abhi-shek-86/T20-86.git",
+    // live_demo_link: "https://your-uber-clone-demo.vercel.app/",
   },
   {
     name: "BMI Calculator",
@@ -283,6 +289,7 @@ const projects = [
     ],
     image: bmi,
     source_code_link: "https://github.com/",
+    live_demo_link: "https://bmi-calculator-eight-psi.vercel.app/",
   },
 ];
 
