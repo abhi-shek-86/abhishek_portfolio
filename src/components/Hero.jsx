@@ -5,9 +5,11 @@ import HeroImage from "./HeroImage"; // Import HeroImage
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto flex flex-col md:flex-row items-center justify-between">
-      <div className={`max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-center gap-5`}>
+      <div
+        className={`max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-center gap-5`}
+      >
         {/* Left Content */}
-        <div className="flex flex-col justify-center items-start w-full md:w-1/2 mt-20 md:mt-0">
+        <div className="flex flex-col justify-center items-start w-full md:w-1/2 mt-32 md:mt-0 sm:mt-40">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Abhishek</span>
           </h1>
